@@ -40,7 +40,7 @@ let imgNumber = 1
 // NEXT IMAGE ARROW FUNC
 arrowNext.addEventListener('click', () => {
     if (imgNumber <= 3) {
-        bigimage.src = `/images/image-product-${imgNumber + 1}.jpg`
+        bigimage.src = `./images/image-product-${imgNumber + 1}.jpg`
         ++imgNumber
         arrowPrev.style.backgroundColor = 'hsl(223, 64%, 98%)'
     }
@@ -54,7 +54,7 @@ arrowNext.addEventListener('click', () => {
 // PREV IMAGE ARROW FUNC
 arrowPrev.addEventListener('click', () => {
     if (imgNumber >= 2) {
-        bigimage.src = `/images/image-product-${imgNumber - 1}.jpg`
+        bigimage.src = `./images/image-product-${imgNumber - 1}.jpg`
         --imgNumber
         arrowNext.style.backgroundColor = 'hsl(223, 64%, 98%)'
     }
@@ -178,7 +178,7 @@ imgSlider.forEach(img =>
 // LightBox Next IMAGE ARROW FUNC
     lightBoxNext.addEventListener('click', () => {
         if (imgNumber <= 3) {
-            mainImg.src = `/images/image-product-${imgNumber + 1}.jpg`
+            mainImg.src = `./images/image-product-${imgNumber + 1}.jpg`
             ++imgNumber
             lightBoxprev.style.backgroundColor = 'hsl(223, 64%, 98%)'
         }
@@ -192,7 +192,7 @@ imgSlider.forEach(img =>
     // LightBox PREV IMAGE ARROW FUNC
     lightBoxprev.addEventListener('click', () => {
         if (imgNumber >= 2) {
-            mainImg.src = `/images/image-product-${imgNumber - 1}.jpg`
+            mainImg.src = `./images/image-product-${imgNumber - 1}.jpg`
             --imgNumber
             lightBoxNext.style.backgroundColor = 'hsl(223, 64%, 98%)'
         }
